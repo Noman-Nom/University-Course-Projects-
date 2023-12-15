@@ -1,9 +1,13 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const Update = () => {
 
+
+  const {id}= useParams()
+
+  // console.log(id);
   const [user, setUser] = useState({
 
     id:null,
@@ -26,7 +30,7 @@ const Update = () => {
     e.preventDefault()
 
     try {
-      await axios.post("http://localhost:8801/test", user)
+      await axios.put("http://localhost:8801/test/"+id, user)
 
       navigate('/')
     } catch (error) {
@@ -45,6 +49,8 @@ const Update = () => {
       <input type="text" name='name' onChange={handleChange} placeholder='enter name'/>
       <input type="text" name='email' onChange={handleChange} placeholder='enter email'/>
       <input type="text" name='desig' onChange={handleChange} placeholder='enter designation'/>
+
+      <h1>{id}</h1>
 
       <button onClick={handleClick}>Update</button>
     </div>
