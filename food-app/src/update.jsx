@@ -45,10 +45,10 @@ const Update = () => {
     <div>
 
       <h1> Update User</h1>
-      <input type="number" name='id' onChange={handleChange} placeholder='enter id' />
-      <input type="text" name='name' onChange={handleChange} placeholder='enter name'/>
-      <input type="text" name='email' onChange={handleChange} placeholder='enter email'/>
-      <input type="text" name='desig' onChange={handleChange} placeholder='enter designation'/>
+      <input type="number" name='id'  onChange={handleChange} placeholder='enter id' />
+      <input type="text" name='name'  onChange={handleChange} placeholder='enter name'/>
+      <input type="text" name='email'  onChange={handleChange} placeholder='enter email'/>
+      <input type="text" name='desig'  onChange={handleChange} placeholder='enter designation'/>
 
       <h1>{id}</h1>
 
