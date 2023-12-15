@@ -38,6 +38,9 @@ fetchData()
             <p>{value.name}</p>
             <p>{value.email}</p>
             <h3>{value.desig}</h3>
+
+            <button>Delete</button>
+            <button>Update</button>
           </div>
         )
 
