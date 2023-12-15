@@ -24,6 +24,19 @@ useEffect(()=>{
 
 fetchData()
 },[])
+
+
+const handleDelete = async (id)=>{
+
+  try {
+        await axios.delete("http://localhost:8801/test/" +id)
+
+        window.location.reload()
+  } catch (error) {
+    console.log(error);
+  }
+
+}
   return (
     <div>
 
@@ -39,7 +52,7 @@ fetchData()
             <p>{value.email}</p>
             <h3>{value.desig}</h3>
 
-            <button>Delete</button>
+            <button onClick={()=>handleDelete(value.id)} >Delete</button>
             <button>Update</button>
           </div>
         )
