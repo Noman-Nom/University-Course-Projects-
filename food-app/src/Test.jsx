@@ -53,7 +53,7 @@ const handleDelete = async (id)=>{
             <h3>{value.desig}</h3>
 
             <button onClick={()=>handleDelete(value.id)} >Delete</button>
-            <button>Update</button>
+            <button><Link to={`/update/${value.id}`}> {console.log(value.id)}Update</Link></button>
           </div>
         )
 
