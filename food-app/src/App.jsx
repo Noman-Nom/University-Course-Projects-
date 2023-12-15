@@ -2,6 +2,8 @@ import React from 'react'
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Test from './Test'
+import Add from './Add'
+import Update from './Update'
 
 const App = () => {
   return (
@@ -9,6 +11,9 @@ const App = () => {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Test/>} />
+        <Route path='/add' element={<Add/>} />
+        <Route path='/update' element={<Update/>} />
+        
       </Routes>
       </BrowserRouter>
     </div>
