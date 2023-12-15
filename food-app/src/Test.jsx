@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 const Test = () => {
@@ -14,15 +15,39 @@ useEffect(()=>{
       const res = await axios.get("http://localhost:8801/test")
 
       console.log(res)
+      setTest(res.data)
     } catch (error) {
-      console.log(error)
+      // console.log(error)
+
     }
 }
 
 fetchData()
 },[])
   return (
-    <div>Test</div>
+    <div>
+
+      <h1>Testing of Crud</h1>
+      <div>
+       {
+        test.map((value)=>(
+
+          <div key={value.id} >
+
+            <h1>{value.id}</h1>
+            <p>{value.name}</p>
+            <p>{value.email}</p>
+            <h3>{value.desig}</h3>
+          </div>
+        )
+
+        )
+       }
+      </div>
+
+      <button><Link to="/add">Add new user</Link> </button>
+
+    </div>
   )
 }
 
