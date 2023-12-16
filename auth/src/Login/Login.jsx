@@ -19,7 +19,14 @@ const Login = () => {
                 </div>
 
                 <button>Login</button>
+
+                <div>
+                <p>Create Account</p>
+                </div>
+
             </form>
+
+
         </div>
     </div>
   )
