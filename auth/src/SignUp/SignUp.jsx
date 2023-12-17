@@ -39,14 +39,18 @@ const SignUp = () => {
             <div className='form__field'>
                 <label htmlFor="">Name</label>
                 <input  onChange={handleChange} name='name' type="text" placeholder='enter your name' />
+
+                {error.name && <span>{error.name}</span>}
             </div>
             <div className='form__field'>
-                <label name='email' htmlFor="">Email</label>
-                <input  onChange={handleChange} type="email" placeholder='enter your email' />
+                <label  htmlFor="">Email</label>
+                <input name='email'  onChange={handleChange} type="email" placeholder='enter your email' />
+                {error.email && <span>{error.email}</span>}
             </div>
             <div className='form__field'>
                 <label htmlFor="">Password</label>
                 <input  onChange={handleChange} name='password' type="password" placeholder='enter your password' />
+                {error.password && <span>{error.password}</span>}
             </div>
 
             <button type='submit' onClick={handleClick}>Signup</button>
