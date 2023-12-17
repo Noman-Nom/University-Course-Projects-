@@ -1,5 +1,5 @@
 const Validation = (values) => {
-  // console.log(values)
+//   console.log( "values = ", values)
   let error = {};
 
   const email_pattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
@@ -12,7 +12,7 @@ const Validation = (values) => {
     error.name = "";
   }
 
-  
+
   if (values.email === "") {
     error.email = "Email Should not be empty";
   } else if (!email_pattern.test(values.email)) {

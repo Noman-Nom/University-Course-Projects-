@@ -16,12 +16,19 @@ const SignUp = () => {
     
     })
 
+    const [error, setError] = useState([])
+
     const handleChange  = (e)=>{
 
         setValues((prev)=>({...prev , [e.target.name]: e.target.value }))
     }
 
-    console.log(values)
+    const handleClick = (e)=>{
+        e.preventDefault()
+
+        setError(Validation(values))
+    }
+    // console.log(values)
   return (
     <div className='container'>
 
@@ -42,7 +49,7 @@ const SignUp = () => {
                 <input  onChange={handleChange} name='password' type="password" placeholder='enter your password' />
             </div>
 
-            <button>Signup</button>
+            <button type='submit' onClick={handleClick}>Signup</button>
 
             <div>
                 <Link to='/login'> <p>Login</p></Link>
