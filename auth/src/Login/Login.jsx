@@ -3,6 +3,12 @@ import './Login.scss'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+import Validation from '../LoginValidation'
+
+
+
+
+
 const Login = () => {
 
     const [values, setValues] = useState({
@@ -10,6 +16,8 @@ const Login = () => {
         email: "",
         password: ""
     })
+
+        const [error, setError] = useState([])
 
     const handleInput = (e) => {
 
@@ -21,9 +29,11 @@ const Login = () => {
 
         e.preventDefault()
 
+        setError(Validation(values))
+    
     }
 
-    console.log(values)
+    // console.log(values)
     return (
         <div className='container'>
 
@@ -33,11 +43,16 @@ const Login = () => {
 
                     <div className='form__field'>
                         <label htmlFor="">Email</label>
-                        <input onChange={handleInput}  name="email" type="text" placeholder='enter your email' />
+                        <input onChange={handleInput}  name="email" type="email" placeholder='enter your email' />
+
+
+                        {error.email && <span>{error.email}</span>}
                     </div>
                     <div className='form__field'>
                         <label htmlFor="">Password</label>
-                        <input onChange={handleInput} name="password" type="text" placeholder='enter your password' />
+                        <input onChange={handleInput} name="password" type="password" placeholder='enter your password' />
+
+                        {error.password && <span>{error.password}</span>}
                     </div>
 
                     <button onClick={handleSubmit} type="submit">Login</button>
