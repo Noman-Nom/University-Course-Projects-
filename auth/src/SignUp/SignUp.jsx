@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './SignUp.scss'
+import { Link } from 'react-router-dom'
 const SignUp = () => {
   return (
     <div className='container'>
@@ -25,7 +26,7 @@ const SignUp = () => {
             <button>Signup</button>
 
             <div>
-                <Link to='/signup'> <p>Login</p></Link>
+                <Link to='/login'> <p>Login</p></Link>
             </div>
 
         </form>
