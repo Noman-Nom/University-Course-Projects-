@@ -30,17 +30,17 @@ const Menu = () => {
                         </div>
 
                         <div className="menu__rating">
-                            <h4><CiStopwatch/> 10+ Hours</h4>
+                            <h4><CiStopwatch/> 24Hr Avb</h4>
                             <span><FaStar/></span>
                         </div>
 
-                        <div className="menu__teacher">
+                        <div className="menu__emoji">
 
                          
                             <div className="emoji-img">
-                                   <img src={item.teacher__img} alt="" />
+                                   <img src={item.emoji} alt="" />
                             </div>
-                            <h2>{item.teacher_name}</h2>
+                            <h2>{item.Offer}</h2>
                         </div>
                     </div>
             ))}

@@ -108,8 +108,8 @@ export const BLueSlideSource = [
         img: images.food1,
         title: "Color Theory for Designers",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
     {
@@ -117,8 +117,8 @@ export const BLueSlideSource = [
         img: images.food2,
         title: "Blog Masterclass: How To Build A Successful",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
     {
@@ -126,8 +126,8 @@ export const BLueSlideSource = [
         img: images.food3,
         title: "Customer Service English Essentials",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
     {
@@ -135,8 +135,8 @@ export const BLueSlideSource = [
         img: images.food4,
         title: "The Complete Digital Marketing Guide",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
     {
@@ -144,8 +144,8 @@ export const BLueSlideSource = [
         img: images.food5,
         title: "Ultimate Guide to Running",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
     {
@@ -153,32 +153,32 @@ export const BLueSlideSource = [
         img: images.food6,
         title: "Ultimate Guide to Running",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
        { id: 7,
         img: images.food7,
         title: "Complete Figma Mega course: UI/UX Design",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
        { id: 8,
         img: images.food8,
         title: "Complete HTML5 Course ",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     },
        { id: 9,
         img: images.food9,
         title: "DevOps course for bigniners  ",
         description: "Study any topic, anytime. explore thousands of courses for free!",
-        teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.emoji
+       Offer:"50% OFF",
+        emoji:images.emoji
 
     }
 
