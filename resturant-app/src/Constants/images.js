@@ -19,12 +19,11 @@ import cake1 from '../assets/c1.jpg'
 import cake2 from '../assets/c2.jpg'
 import cake3 from '../assets/c3.jpg'
 
-import menu1 from '../assets/menu-1.png'
-import menu2 from '../assets/menu-2.png'
-import menu3 from '../assets/menu-3.png'
-import menu4 from '../assets/menu-4.png'
-import menu5 from '../assets/menu-5.png'
-import menu6 from '../assets/menu-6.png'
+import menu1 from '../assets/menu-1.jpg'
+import menu2 from '../assets/menu-2.jpg'
+import menu3 from '../assets/menu-3.jpg'
+import menu4 from '../assets/menu-4.jpg'
+
 
 
 
@@ -50,7 +49,6 @@ export default {
     menu2,
     menu3,
     menu4,
-    menu5,
-    menu6,
+   
     
 }
