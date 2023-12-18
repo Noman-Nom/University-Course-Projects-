@@ -10,8 +10,8 @@ const Menu = () => {
   return (
     <div className='menus'>
         <div className="menu__top">
-            <h1><FaQuoteLeft/> Upcoming courses <FaQuoteRight/> </h1>
-            <p> <RiSingleQuotesL/> Unlock new expertise with industry experts and thought leaders in our  <br /> upcoming courses. <RiSingleQuotesR/></p>
+            <h1><FaQuoteLeft/> Our Menu<FaQuoteRight/> </h1>
+            <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
 
         </div>
 
