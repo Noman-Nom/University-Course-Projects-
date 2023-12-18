@@ -93,12 +93,16 @@
             align-items: center;
     
             width: 300px;
+          
+
+            // border: 1px solid green;
 
             img{
                 width: 100%;
                 border-radius: 20px;
                 object-fit: cover;
                 cursor: pointer;
+                height: 260px;
             }
         }
 

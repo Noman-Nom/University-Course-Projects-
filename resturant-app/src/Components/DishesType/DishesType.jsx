@@ -10,11 +10,11 @@ const DishesType = () => {
 
             <div className="module__top">
 
-                <h1> <FaQuoteLeft/> <span>Our Four Modules </span><br />
-                Start learning from best platform<FaQuoteRight />
+                <h1> <FaQuoteLeft/> <span>Our Daily Menu </span><br />
+                 more in keeping with the final result, the <FaQuoteRight />
                 </h1>
                 <p> <RiSingleQuotesL />
-                    Study any topic, anytime. explore thousands of courses and training for free
+                In order to have a result that is more in keeping with the final result, the graphic designers
                     <RiSingleQuotesR />
                 </p>
             </div>
