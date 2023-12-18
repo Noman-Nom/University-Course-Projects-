@@ -173,13 +173,13 @@ export const BLueSlideSource = [
         emoji:images.emoji
 
     },
-       { id: 9,
-        img: images.food9,
-        title: "DevOps course for bigniners  ",
-        description: "Study any topic, anytime. explore thousands of courses for free!",
-       Offer:"50% OFF",
-        emoji:images.emoji
+    //    { id: 9,
+    //     img: images.food9,
+    //     title: "DevOps course for bigniners  ",
+    //     description: "Study any topic, anytime. explore thousands of courses for free!",
+    //    Offer:"50% OFF",
+    //     emoji:images.emoji
 
-    }
+    // }
 
  ]
