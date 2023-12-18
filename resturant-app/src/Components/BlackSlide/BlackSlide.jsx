@@ -8,7 +8,7 @@ const BlackSlide = () => {
     <div className='black'>
 
         <div className="black__content">
-            <h3> <FaQuoteLeft /><span> We</span> provides you world class performance . <FaQuoteRight /></h3>
+            <h3> <FaQuoteLeft /><span> We</span> provides you world class Dishes . <FaQuoteRight /></h3>
         </div>
 
         <div className="black__items">

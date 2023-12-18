@@ -43,3 +43,29 @@ export const BlackSlideContent = [
         description: " The graphic and typographic operators know"
     },
 ]
+
+
+export const DishesTypeSource = [
+
+    {
+        id:1,
+        name:"Lorem ipsume",
+        img: images.menu1
+    },
+    {
+        id:2,
+        name:"Lorem ipsum",
+        img: images.menu2
+    },
+    {
+        id:3,
+        name:"Lorem ipsum",
+        img: images.menu3
+    },
+
+    {
+        id:4,
+        name:"Lorem ipsum",
+        img: images.menu4
+    }
+]
