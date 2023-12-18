@@ -12,13 +12,14 @@ const Header = () => {
         <div className='header'>
             <div className="left">
                 <div className="left__content">
-                    <h1><FaQuoteLeft /> Start learning from best <span> platform </span> <FaQuoteRight /></h1>
-                    <p> <RiSingleQuotesL/> Study any topic, anytime. explore thousands of courses for the lowest price ever! <RiSingleQuotesR/></p>
+                    <h1><FaQuoteLeft /> Modern restaurant in <span> center</span> of the city  <FaQuoteRight /></h1>
+                    <p> <RiSingleQuotesL/> Rosoi is one of the most popular Restaurants with unique
+& special menu made by our passionate chefs with love and quality with can impress you <RiSingleQuotesR/></p>
                 </div>
 
                 <div className="left__form">
                     <div className="form">
-                        <input placeholder='what do you want to learn' type="text" />
+                        <input placeholder='Search your Fvt Dish' type="text" />
                         <button><FaSearch/> Search  </button>
                     </div>
                 </div>

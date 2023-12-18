@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
 
           <div className="nav__right-btns">
-            <button className='btn-req'>Request a Demo</button>
+            <button className='btn-req'>Booking</button>
             <button className='btn-sign'>Sign up</button>
           </div>
 
