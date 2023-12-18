@@ -24,6 +24,11 @@ import menu2 from '../assets/menu-2.jpg'
 import menu3 from '../assets/menu-3.jpg'
 import menu4 from '../assets/menu-4.jpg'
 
+import why1 from '../assets/w1.png'
+import why2 from '../assets/w2.png'
+import why3 from '../assets/w3.png'
+import why4 from '../assets/w4.png'
+
 
 
 
@@ -49,6 +54,9 @@ export default {
     menu2,
     menu3,
     menu4,
-   
+   why1,
+   why2,
+   why3,
+   why4,
     
 }
