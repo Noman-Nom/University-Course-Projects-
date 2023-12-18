@@ -69,3 +69,33 @@ export const DishesTypeSource = [
         img: images.menu4
     }
 ]
+
+
+export const BLueSlideSource = [
+
+    {
+        id:1,
+        img:images.why1,
+        title:"normal distribution",
+        description: "There are many variations of passages of  available, but the majority"
+    },
+    {
+        id:2,
+        img:images.why2,
+        title:"normal distribution",
+        description: "There are many variations of passages of  available, but the majority"
+    },
+    {
+        id:3,
+        img:images.why3,
+        title:"normal distribution",
+        description: "There are many variations of passages of  available, but the majority"
+    },
+    {
+        id:4,
+        img:images.why4,
+        title:"normal distribution",
+        description: "There are many variations of passages of  available, but the majority"
+    },
+   
+ ]
