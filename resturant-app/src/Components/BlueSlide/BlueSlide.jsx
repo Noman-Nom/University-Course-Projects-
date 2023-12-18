@@ -8,7 +8,7 @@ const BlueSlide = () => {
     <div className='container'>
 
 <div className="container__top">
-        <h1><FaQuoteLeft/> Why learn online? <FaQuoteRight/> </h1>
+        <h1><FaQuoteLeft/> Lorem ipsum dolor sit. <FaQuoteRight/> </h1>
         
     </div>
     <div className="container__bottom">
