@@ -105,80 +105,80 @@ export const BLueSlideSource = [
 
     {
         id: 1,
-        img: images.upcommingCourse1,
+        img: images.menu1,
         title: "Color Theory for Designers",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.anwar
+        teacher__img:images.emoji
 
     },
     {
         id: 2,
-        img: images.upcommingCourse2,
+        img: images.menu2,
         title: "Blog Masterclass: How To Build A Successful",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.nom
+        teacher__img:images.emoji
 
     },
     {
         id: 3,
-        img: images.upcommingCourse3,
+        img: images.menu3,
         title: "Customer Service English Essentials",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.anwar
+        teacher__img:images.emoji
 
     },
     {
         id: 4,
-        img: images.upcommingCourse4,
+        img: images.menu4,
         title: "The Complete Digital Marketing Guide",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.nom
+        teacher__img:images.emoji
 
     },
     {
         id: 5,
-        img: images.upcommingCourse5,
+        img: images.menu5,
         title: "Ultimate Guide to Running",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.anwar
+        teacher__img:images.emoji
 
     },
     {
         id: 6,
-        img: images.upcommingCourse6,
+        img: images.menu6,
         title: "Ultimate Guide to Running",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.nom
+        teacher__img:images.emoji
 
     },
        { id: 7,
-        img: images.upcommingCourse7,
+        img: images.menu7,
         title: "Complete Figma Mega course: UI/UX Design",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.anwar
+        teacher__img:images.emoji
 
     },
        { id: 8,
-        img: images.upcommingCourse8,
+        img: images.menu8,
         title: "Complete HTML5 Course ",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Noman",
-        teacher__img:images.nom
+        teacher__img:images.emoji
 
     },
        { id: 9,
-        img: images.upcommingCourse9,
+        img: images.menu9,
         title: "DevOps course for bigniners  ",
         description: "Study any topic, anytime. explore thousands of courses for free!",
         teacher_name:"Engr. Muhammad Anwar",
-        teacher__img:images.anwar
+        teacher__img:images.emoji
 
     }
 

@@ -30,6 +30,20 @@ import why3 from '../assets/w3.png'
 import why4 from '../assets/w4.png'
 
 
+import menu1 from '../assets/f1.jpg'
+import menu2 from '../assets/f2.jpg'
+import menu3 from '../assets/f3.jpg'
+import menu4 from '../assets/f4.jpg'
+import menu5 from '../assets/f5.jpg'
+import menu6 from '../assets/f6.jpg'
+import menu7 from '../assets/f7.jpg'
+import menu8 from '../assets/f8.jpg'
+import menu9 from '../assets/f9.jpg'
+import menu10 from '../assets/f10.jpg'
+
+import emoji from '../assets/emoji.png'
+
+
 
 
 
@@ -58,5 +72,15 @@ export default {
    why2,
    why3,
    why4,
+   menu1,
+   menu2,
+   menu3,
+   menu5,
+   menu6,
+   menu7,
+   menu8,
+   menu9,
+   menu10,
+   emoji,
     
 }
