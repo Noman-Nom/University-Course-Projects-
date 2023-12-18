@@ -7,6 +7,9 @@ import DishesTypePage from './Pages/DishesTypePage/DishesTypePage'
 import BlueSlidePage from './Pages/BlueSlidePage/BlueSlidePage'
 import MenuPage from './Pages/MenuPage/MenuPage'
 
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Menu from './Components/Menu/Menu'
+
 const App = () => {
   return (
     <div>
@@ -18,6 +21,13 @@ const App = () => {
       <DishesTypePage/>
       <BlueSlidePage/>
       <MenuPage/>
+
+      <BrowserRouter>
+      <Routes>
+        
+        {/* <Route  path='/food' element={<MenuPage/>}/> */}
+      </Routes>
+      </BrowserRouter>
     </div>
   )
 }
