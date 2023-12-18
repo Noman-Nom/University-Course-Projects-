@@ -15,6 +15,13 @@ import promo3 from '../assets/promo-3.png'
 import promo4 from '../assets/promo-4.png'
 
 
+import cake1 from '../assets/c1.jpg'
+import cake2 from '../assets/c2.jpg'
+import cake3 from '../assets/c3.jpg'
+
+
+
+
 
 export default {
     logo,
@@ -28,4 +35,7 @@ export default {
     promo2,
     promo3,
     promo4,
+    cake1,
+    cake2,
+    cake3,
 }
