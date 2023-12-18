@@ -20,7 +20,7 @@ const Banner = () => {
                 </div>
                 <div className="students">
                     <h1>54<span>+</span></h1>
-                    <span>Countries 👨‍🏫 <br /> Branches  </span>
+                    <span>Countries 🌐 <br /> Branches  </span>
                 </div>
             </div>
 
