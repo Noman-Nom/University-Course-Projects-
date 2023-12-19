@@ -10,6 +10,7 @@ import MenuPage from './Pages/MenuPage/MenuPage'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Menu from './Components/Menu/Menu'
 import AllFoodPage from './Pages/AllFoodPage/AllFoodPage'
+import AddNew from './Components/AddNew/AddNew'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
      <Route path='/' index element={<Home/>}  />
      <Route path='/menu' index element={<MenuPage/>}   />
      <Route path='/food' element={<AllFoodPage/>} />
+     <Route path='/addFood' element={<AddNew/>} />
 
       </Routes>
       </BrowserRouter>

@@ -1,0 +1,110 @@
+
+.addForm{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 70px);
+    margin: 20px;
+   
+
+}
+.addForm h1{
+    text-align: center;
+    font-size: 49px;
+    word-spacing: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.addForm h1 span{
+    color:rgb(65, 163, 249);
+}
+.top{
+    display: flex;
+   padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.top__msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    
+    height: 80px;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f8d9dc;
+    transition: all .3s ease-in-out;
+    gap: 10px;
+}
+.top__msg:hover{
+    box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+}
+.top__msg h3{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: gray;
+}
+.msg-img{
+    width: 50px;
+
+}
+.msg-img img{
+    width: 100%;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    width: 60%;
+    /* border: 1px solid; */
+}
+.bottom__input{
+    width: 100%;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#edf2f8;
+    transition: all .3s ease-in-out;
+}
+.bottom__input input, .bottom__input textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color:#edf2f8;
+    color: #313bac;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+.bottom__input textarea{
+    height: 170px;
+}
+.bottom__input input:hover, .bottom__input textarea:hover{
+    box-shadow: rgba(14, 190, 233, 0.8) 0px 3px 6px, rgb(93, 135, 255, 0.8) 0px 3px 6px;
+}
+
+.bottom button{
+
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(14 165 233);
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 2rem 0 0 0 ;
+    font-family: sans-serif;
+}
