@@ -38,12 +38,22 @@ const Menu = () => {
     <div className='menus'>
 
         <div className="menu__top">
+
+            <div className='menu__top-content'>
+
             <h1><FaQuoteLeft/> Our Menu<FaQuoteRight/> </h1>
             <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
+            </div>
 
+             
         </div>
 
+        <div className='menu__add-btn'>
+                    <button>Add New Food</button>
+                </div>
+
         <div className="menu__bottom">
+      
 
             {value.map((item)=>(
                     <div className='menu__item' key={item.id}>
