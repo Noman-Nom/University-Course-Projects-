@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <div className="nav__left">
           <div className="nav__logo">
-            <img src={images.logo} alt="" />
+          <Link to='/'>  <img src={images.logo} alt="" /></Link>
 
           </div>
         </div>
@@ -47,13 +47,13 @@ const Navbar = () => {
             <li><Link to='/food'>Foods</Link>
               <div />
             </li>
-            <li><Link><a href="#">Services</a></Link>
+            <li><Link>Services</Link>
               <div />
             </li>
-            <li><Link><a href="#">Branches</a></Link>
+            <li><Link>Branches</Link>
               <div />
             </li>
-            <li><Link><a href="#">Contact</a></Link>
+            <li><Link>Contact</Link>
               <div />
             </li>
 
