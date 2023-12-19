@@ -3,6 +3,7 @@ import './Navbar.scss'
 import { images } from '../../Constants';
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -39,22 +40,20 @@ const Navbar = () => {
 
         <div className="nav__mid">
           <ul>
-            <li><a href="#">Home</a>
+          
+            <li> <Link to='/menu'>Menu</Link> 
               <div />
             </li>
-            <li><a href="#">Menu</a>
+            <li><Link to='/food'>Foods</Link>
               <div />
             </li>
-            <li><a href="#">Foods</a>
+            <li><Link><a href="#">Services</a></Link>
               <div />
             </li>
-            <li><a href="#">Services</a>
+            <li><Link><a href="#">Branches</a></Link>
               <div />
             </li>
-            <li><a href="#">Branches</a>
-              <div />
-            </li>
-            <li><a href="#">Contact</a>
+            <li><Link><a href="#">Contact</a></Link>
               <div />
             </li>
 
