@@ -1,15 +1,39 @@
-import React from 'react'
+import {React, useEffect, useState} from 'react'
 import './Menu.scss'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6'
-import { MenuSource } from '../../SourceFile';
+
 import { CiStopwatch } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { RiSingleQuotesL, RiSingleQuotesR } from 'react-icons/ri';
-import Navbar from '../Navbar/Navbar';
+import axios from 'axios';
+import { images } from '../../Constants';
+
+
 
 const Menu = () => {
+
+    const [value, setValue] = useState([])
+
+    useEffect(()=>{
+            const FetchData = async ()=>{
+                    try {
+                        const res = await axios.get('http://localhost:8802/menu')
+                        // console.log(res.data);
+                        setValue(res.data)
+
+
+                    } catch (error) {
+                        console.log(error);
+                        
+                    }       
+                
+                
+
+            }
+            FetchData()
+    },[])
     return (
-      
+    
    
     <div className='menus'>
 
@@ -21,7 +45,7 @@ const Menu = () => {
 
         <div className="menu__bottom">
 
-            {MenuSource.map((item)=>(
+            {value.map((item)=>(
                     <div className='menu__item' key={item.id}>
                         <div className="menu__img">
                             <img src={item.img} alt="" />
@@ -42,9 +66,9 @@ const Menu = () => {
 
                          
                             <div className="emoji-img">
-                                   <img src={item.emoji} alt="" />
+                                   <img src={images.emoji} alt="" />
                             </div>
-                            <h2>{item.Offer}</h2>
+                            <h2>{item.offer}</h2>
                         </div>
                     </div>
             ))}
