@@ -2,6 +2,7 @@ import { useEffect , useState} from 'react'
 import './AllFood.scss'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6'
 // import { AllFoodSource } from '../../SourceFile';
+import { images } from '../../Constants';
 import { CiStopwatch } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { RiSingleQuotesL, RiSingleQuotesR } from 'react-icons/ri';
@@ -65,7 +66,7 @@ const Menu = () => {
 
                          
                             <div className="emoji-img">
-                                   <img src={item.emoji} alt="" />
+                                   <img src={images.emoji} alt="" />
                             </div>
                             <h2>{item.offer}</h2>
                         </div>

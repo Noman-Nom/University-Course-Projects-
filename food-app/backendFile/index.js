@@ -30,6 +30,18 @@ const q = "SELECT * FROM food "
     })
 
 })
+app.get('/menu', (req,res)=>{
+const q = "SELECT * FROM menu "
+
+    db.query(q,(err,data)=>{
+        if(err){
+            res.json(err)
+        }else{
+            res.json(data)
+        }
+    })
+
+})
 
 app.listen(8802, ()=>{
         console.log("hello this is from backend im noman ");
