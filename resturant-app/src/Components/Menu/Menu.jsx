@@ -5,10 +5,14 @@ import { MenuSource } from '../../SourceFile';
 import { CiStopwatch } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { RiSingleQuotesL, RiSingleQuotesR } from 'react-icons/ri';
+import Navbar from '../Navbar/Navbar';
 
 const Menu = () => {
-  return (
+    return (
+      
+   
     <div className='menus'>
+
         <div className="menu__top">
             <h1><FaQuoteLeft/> Our Menu<FaQuoteRight/> </h1>
             <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
@@ -49,6 +53,7 @@ const Menu = () => {
 
 
     </div>
+        
   )
 }
 

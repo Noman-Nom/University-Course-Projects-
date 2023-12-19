@@ -14,18 +14,13 @@ const App = () => {
   return (
     <div>
 
-      <Home/>
-      <PromoPage/>
-      <BannerPage/>
-      <BlackSlidePage/>
-      <DishesTypePage/>
-      <BlueSlidePage/>
-      <MenuPage/>
-
+     
       <BrowserRouter>
       <Routes>
         
-        {/* <Route  path='/food' element={<MenuPage/>}/> */}
+     <Route path='/' index element={<Home/>}  />
+     <Route path='/food' index element={<MenuPage/>}   />
+
       </Routes>
       </BrowserRouter>
     </div>
