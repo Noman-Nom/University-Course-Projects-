@@ -9,6 +9,7 @@ import MenuPage from './Pages/MenuPage/MenuPage'
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Menu from './Components/Menu/Menu'
+import AllFoodPage from './Pages/AllFoodPage/AllFoodPage'
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
       <Routes>
         
      <Route path='/' index element={<Home/>}  />
-     <Route path='/food' index element={<MenuPage/>}   />
+     <Route path='/menu' index element={<MenuPage/>}   />
+     <Route path='/food' element={<AllFoodPage/>} />
 
       </Routes>
       </BrowserRouter>
