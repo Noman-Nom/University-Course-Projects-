@@ -9,23 +9,20 @@ import MenuPage from './Pages/MenuPage/MenuPage'
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Menu from './Components/Menu/Menu'
+import AllFoodPage from './Pages/AllFoodPage/AllFoodPage'
 
 const App = () => {
   return (
     <div>
 
-      <Home/>
-      <PromoPage/>
-      <BannerPage/>
-      <BlackSlidePage/>
-      <DishesTypePage/>
-      <BlueSlidePage/>
-      <MenuPage/>
-
+     
       <BrowserRouter>
       <Routes>
         
-        {/* <Route  path='/food' element={<MenuPage/>}/> */}
+     <Route path='/' index element={<Home/>}  />
+     <Route path='/menu' index element={<MenuPage/>}   />
+     <Route path='/food' element={<AllFoodPage/>} />
+
       </Routes>
       </BrowserRouter>
     </div>
