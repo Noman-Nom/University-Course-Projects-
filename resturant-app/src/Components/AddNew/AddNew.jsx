@@ -1,15 +1,20 @@
 import {React ,useEffect , useState  }from 'react'
+import axios from 'axios'
 import './AddNew.scss'
 import Navbar from '../Navbar/Navbar'
+import { useNavigate } from 'react-router'
+
 
 
 
 const AddNew = () => {
 
+    const navigate = useNavigate()
+
 
     const [value, setValue] = useState({
-
-        image:"",
+        id:null,
+        img:"",
         title:"",
         description:"",
         offer:""
@@ -22,6 +27,20 @@ const AddNew = () => {
    console.log(value);
     }
 
+
+    const handleClick = async ()=>{
+
+     try {
+
+        await axios.post('http://localhost:8802/menu', value)
+            console.log("yes");
+        // navigate('/menu')
+        
+     } catch (error) {
+        console.log(error);
+     }
+
+    }
   return (
 
     <div>
@@ -52,7 +71,11 @@ const AddNew = () => {
 
     <div className="bottom">
         <div className="bottom__input">
-            <input name="image" onChange={handleChange}  type="text" placeholder="Paste img URL"/>
+            <input name="id" onChange={handleChange}  type="number" placeholder="enter id"/>
+
+        </div>
+        <div className="bottom__input">
+            <input name="img" onChange={handleChange}  type="text" placeholder="Paste img URL"/>
 
         </div>
         <div className="bottom__input">
@@ -70,7 +93,7 @@ const AddNew = () => {
 
         </div>
        
-        <button>Add Product</button>
+        <button onClick={handleClick} >Add Product</button>
     </div>
 </div>
 </div>
