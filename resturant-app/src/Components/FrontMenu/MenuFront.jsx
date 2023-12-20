@@ -1,51 +1,57 @@
-import { useEffect , useState} from 'react'
-import './AllFood.scss'
+import {React, useEffect, useState} from 'react'
+import './MenuFront.scss'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6'
-// import { AllFoodSource } from '../../SourceFile';
-import { images } from '../../Constants';
+
 import { CiStopwatch } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { RiSingleQuotesL, RiSingleQuotesR } from 'react-icons/ri';
-
 import axios from 'axios';
+import { images } from '../../Constants';
 
 
 
-
-const Menu = () => {
+const MenuFront = () => {
 
     const [value, setValue] = useState([])
 
     useEffect(()=>{
+            const FetchData = async ()=>{
+                    try {
+                        const res = await axios.get('http://localhost:8802/menu')
+                        // console.log(res.data);
+                        setValue(res.data)
 
-        const fetchData = async () =>{
 
-            try {
-                const res = await axios.get('http://localhost:8802/food')
-                console.log(res.data);
-                setValue(res.data)
-
-              
+                    } catch (error) {
+                        console.log(error);
+                        
+                    }       
                 
-            } catch (error) {
-                console.log(error);
+                
+
             }
-        }
-        fetchData()
+            FetchData()
     },[])
     return (
-
-   
+    
    
     <div className='menus'>
 
         <div className="menu__top">
-            <h1><FaQuoteLeft/> ALL DISHES<FaQuoteRight/> </h1>
-            <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
 
+            <div className='menu__top-content'>
+
+            <h1><FaQuoteLeft/> Our Menu<FaQuoteRight/> </h1>
+            <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
+            </div>
+
+             
         </div>
 
+       
+
         <div className="menu__bottom">
+      
 
             {value.map((item)=>(
                     <div className='menu__item' key={item.id}>
@@ -83,4 +89,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuFront
