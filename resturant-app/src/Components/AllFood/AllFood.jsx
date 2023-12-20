@@ -24,6 +24,8 @@ const Menu = () => {
                 const res = await axios.get('http://localhost:8802/food')
                 console.log(res.data);
                 setValue(res.data)
+
+              
                 
             } catch (error) {
                 console.log(error);
