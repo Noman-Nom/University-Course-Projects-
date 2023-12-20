@@ -34,7 +34,7 @@ const AddNew = () => {
 
         await axios.post('http://localhost:8802/menu', value)
             console.log("yes");
-        // navigate('/menu')
+        navigate('/menu')
         
      } catch (error) {
         console.log(error);

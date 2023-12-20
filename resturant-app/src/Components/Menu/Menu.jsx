@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa6";
 import { RiSingleQuotesL, RiSingleQuotesR } from 'react-icons/ri';
 import axios from 'axios';
 import { images } from '../../Constants';
-
+import { Link } from 'react-router-dom';
 
 
 const Menu = () => {
@@ -49,7 +49,7 @@ const Menu = () => {
         </div>
 
         <div className='menu__add-btn'>
-                    <button>Add New Food</button>
+                    <button> <Link to='/addFood'>Add New Food</Link> </button>
                 </div>
 
         <div className="menu__bottom">
