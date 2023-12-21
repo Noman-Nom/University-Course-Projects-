@@ -15,6 +15,7 @@ import promo3 from '../assets/promo-3.png'
 import promo4 from '../assets/promo-4.png'
 
 
+
 import cake1 from '../assets/c1.jpg'
 import cake2 from '../assets/c2.jpg'
 import cake3 from '../assets/c3.jpg'
@@ -42,6 +43,8 @@ import food9 from '../assets/f9.jpg'
 import food10 from '../assets/f10.jpg'
 
 import emoji from '../assets/emoji.png'
+
+import cart from '../assets/cart.png'
 
 
 
@@ -83,5 +86,6 @@ export default {
    food9,
    food10,
    emoji,
+   cart
     
 }
