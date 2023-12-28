@@ -35,7 +35,7 @@ const MenuFront = () => {
     return (
     
    
-    <div className='menus'>
+    <div className='menu'>
 
         <div className="menu__top">
 

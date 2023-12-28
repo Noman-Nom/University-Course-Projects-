@@ -37,7 +37,7 @@ const Menu = () => {
 
    
    
-    <div className='menus'>
+    <div className='menus1'>
 
         <div className="menu__top">
             <h1><FaQuoteLeft/> ALL DISHES<FaQuoteRight/> </h1>

@@ -46,6 +46,8 @@ import emoji from '../assets/emoji.png'
 
 import cart from '../assets/cart.png'
 
+import deletepic from '../assets/delete.png'
+
 
 
 
@@ -86,6 +88,7 @@ export default {
    food9,
    food10,
    emoji,
-   cart
+   cart,
+   deletepic
     
 }
