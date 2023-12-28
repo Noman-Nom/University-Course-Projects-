@@ -35,7 +35,7 @@ const MenuFront = () => {
     return (
     
    
-    <div className='menus'>
+    <div className='menu'>
 
         <div className="menu__top">
 
@@ -74,7 +74,7 @@ const MenuFront = () => {
 
                          
                             <div className="emoji-img">
-                                   <img src={images.emoji} alt="" />
+                                   <img src={images.cart} alt="" />
                             </div>
                             <h2>{item.offer}</h2>
                         </div>

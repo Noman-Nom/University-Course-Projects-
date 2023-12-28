@@ -5,7 +5,7 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6'
 import { BLueSlideSource } from '../../SourceFile'
 const BlueSlide = () => {
   return (
-    <div className='container'>
+    <div className='container1'>
 
 <div className="container__top">
         <h1><FaQuoteLeft/> Lorem ipsum dolor sit. <FaQuoteRight/> </h1>

@@ -5,14 +5,23 @@ import './MenuPage.scss';
 
 const MenuPage = () => {
   return (
-    <div>
-    
+    <div className='container'>
 
-    <Navbar/>
-   
-   
+      <div className='top'>
+
+        <Navbar className="navbar" />
+      </div>
+
+
+      <div className='bottom'>
+
         <Menu />
-     
+      </div>
+
+     <div className="back">
+       
+      </div>
+
     </div>
   );
 };

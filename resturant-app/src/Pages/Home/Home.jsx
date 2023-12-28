@@ -7,6 +7,7 @@ import DishesTypePage from '../DishesTypePage/DishesTypePage'
 import BlueSlidePage from '../BlueSlidePage/BlueSlidePage'
 import MenuPage from '../MenuPage/MenuPage'
 import MenuFrontPage from '../MenuFrontPage/MenuFrontPage'
+import MenuFront from '../../Components/FrontMenu/MenuFront'
 
 const Home = () => {
   return (
@@ -17,7 +18,8 @@ const Home = () => {
             <BlackSlidePage/>
             <DishesTypePage/>
             <BlueSlidePage/>
-           <MenuFrontPage/>
+            <MenuFront/>
+           {/* <MenuFrontPage/> */}
             
 
     </div>

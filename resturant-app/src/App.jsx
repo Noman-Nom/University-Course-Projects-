@@ -11,6 +11,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Menu from './Components/Menu/Menu'
 import AllFoodPage from './Pages/AllFoodPage/AllFoodPage'
 import AddNew from './Components/AddNew/AddNew'
+import CartPage from './Pages/CartPage/CartPage'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
      <Route path='/menu' index element={<MenuPage/>}   />
      <Route path='/food' element={<AllFoodPage/>} />
      <Route path='/addFood' element={<AddNew/>} />
+     <Route path='/cart' element={<CartPage/>} />
 
       </Routes>
       </BrowserRouter>
