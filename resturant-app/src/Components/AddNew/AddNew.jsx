@@ -17,6 +17,7 @@ const AddNew = () => {
         img:"",
         title:"",
         description:"",
+        price:"",
         offer:""
     })
 
@@ -79,17 +80,21 @@ const AddNew = () => {
 
         </div>
         <div className="bottom__input">
-            <input name="title"  onChange={handleChange} type="email" placeholder="Enter Title"/>
+            <input name="title"  onChange={handleChange} type='text' placeholder="Enter Title"/>
 
         </div>
        
         <div className="bottom__input">
-            <input name="description" onChange={handleChange}  type="email" placeholder="Enter Description"/>
+            <input name="description" onChange={handleChange}  type="text" placeholder="Enter Description"/>
+
+        </div>
+        <div className="bottom__input">
+            <input name="price" onChange={handleChange}  type="text" placeholder="Enter Price"/>
 
         </div>
       
         <div className="bottom__input">
-            <input name="offer" onChange={handleChange}  type="email" placeholder="Enter Offer "/>
+            <input name="offer" onChange={handleChange}  type="text" placeholder="Enter Offer "/>
 
         </div>
        

@@ -1,16 +1,16 @@
 import React from 'react'
-import AllFood from '../../Components/AllFood/AllFood'
+// import AllFood from '../../Components/AllFood/AllFood'
 import Navbar from '../../Components/Navbar/Navbar'
+import AllFood from '../../Components/AllFood/AllFood'
 
 const AllFoodPage  =  () => {
   return (
     <div>
-    <div className='top'>
+   
 
 <Navbar className="navbar" />
-</div>
 
-    <AllFood/>
+  <AllFood/>
 </div>
   )
 }
