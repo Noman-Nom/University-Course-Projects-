@@ -77,7 +77,7 @@ const Menu = () => {
 
 
 
-        <div className='menus'>
+        <div className='menu'>
 
             <div className="menu__top">
 
@@ -119,7 +119,7 @@ const Menu = () => {
                         <div className="menu__emoji">
 
 
-                            <div className="emoji-img">
+                            <div className="menu-img">
                                 < img src={images.cart} alt="" onClick={() => handleCartClick(item)} />
 
                                 <img src={images.deletepic} onClick={() => handleDelete(item.id)} alt="" />
