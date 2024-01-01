@@ -67,7 +67,7 @@ const MenuFront = () => {
 
                         <div className="menu__rating">
                             <h4><CiStopwatch/> 24Hr Avb</h4>
-                            <span><FaStar/></span>
+                            <span>{item.price}</span>
                         </div>
 
                         <div className="menu__emoji">

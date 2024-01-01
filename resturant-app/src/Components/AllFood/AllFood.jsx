@@ -37,38 +37,43 @@ const Menu = () => {
 
    
    
-    <div className='menus1'>
+    <div className='allfood'>
 
-        <div className="menu__top">
+        <div className="allfood__top">
+
+            <div className='allfood__top-content'>
             <h1><FaQuoteLeft/> ALL DISHES<FaQuoteRight/> </h1>
             <p> <RiSingleQuotesL/> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR/></p>
+            </div>
+            
 
         </div>
 
-        <div className="menu__bottom">
+        <div className="allfood__bottom">
 
             {value.map((item)=>(
-                    <div className='menu__item' key={item.id}>
-                        <div className="menu__img">
+                    <div className='allfood__item' key={item.id}>
+                        <div className="allfood__img">
                             <img src={item.img} alt="" />
                         </div>
-                        <div className="menu__content">
+                        <div className="allfood__content">
                             <h1>{item.title}</h1>
                             <p>{item.description}</p>
 
 
                         </div>
 
-                        <div className="menu__rating">
+                        <div className="allfood__rating">
                             <h4><CiStopwatch/> 24Hr Avb</h4>
-                            <span><FaStar/></span>
+                            <span>{item.price}</span>
                         </div>
 
-                        <div className="menu__emoji">
+                        <div className="allfood__emoji">
 
                          
-                            <div className="emoji-img">
-                                   <img src={images.emoji} alt="" />
+                            <div className="allfood-img">
+                                   <img src={images.cart} alt="" />
+                                   <img src={images.deletepic} alt="" />
                             </div>
                             <h2>{item.offer}</h2>
                         </div>

@@ -42,7 +42,7 @@ const Menu = () => {
         const FetchData = async () => {
             try {
                 const res = await axios.get('http://localhost:8802/menu')
-                // console.log(res.data);
+                console.log(res.data);
                 setValue(res.data)
 
 
@@ -77,7 +77,7 @@ const Menu = () => {
 
 
 
-        <div className='menus'>
+        <div className='menu'>
 
             <div className="menu__top">
 
@@ -113,13 +113,13 @@ const Menu = () => {
 
                         <div className="menu__rating">
                             <h4><CiStopwatch /> 24Hr Avb</h4>
-                            <span><FaStar /></span>
+                            <span>{item.price}</span>
                         </div>
 
                         <div className="menu__emoji">
 
 
-                            <div className="emoji-img">
+                            <div className="menu-img">
                                 < img src={images.cart} alt="" onClick={() => handleCartClick(item)} />
 
                                 <img src={images.deletepic} onClick={() => handleDelete(item.id)} alt="" />
