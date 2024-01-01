@@ -5,10 +5,10 @@ import Navbar from '../../Components/Navbar/Navbar';
 const MenuPage = () => {
   return (
     <div>
-    <div className='top'>
+
 
 <Navbar className="navbar" />
-</div>
+
 
     <Menu/>
 </div>

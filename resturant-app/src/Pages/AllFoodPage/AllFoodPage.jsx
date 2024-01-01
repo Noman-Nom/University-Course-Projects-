@@ -6,10 +6,9 @@ import AllFood from '../../Components/AllFood/AllFood'
 const AllFoodPage  =  () => {
   return (
     <div>
-    <div className='top'>
+   
 
 <Navbar className="navbar" />
-</div>
 
   <AllFood/>
 </div>
