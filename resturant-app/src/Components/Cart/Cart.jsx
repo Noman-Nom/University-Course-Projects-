@@ -61,11 +61,11 @@ const Cart = () => {
 
 
 
-        <div className='menus'>
+        <div className='cart'>
 
-            <div className="menu__top">
+            <div className="cart__top">
 
-                <div className='menu__top-content'>
+                <div className='cart__top-content'>
 
                     <h1><FaQuoteLeft />Your Cart Items<FaQuoteRight /> </h1>
                     <p> <RiSingleQuotesL /> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR /></p>
@@ -78,30 +78,30 @@ const Cart = () => {
 
             </div>
 
-            <div className="menu__bottom">
+            <div className="cart__bottom">
 
 
                 {value.map((item) => (
-                    <div className='menu__item' key={item.id}>
-                        <div className="menu__img">
+                    <div className='cart__item' key={item.id}>
+                        <div className="cart__img">
                             <img src={item.img} alt="" />
                         </div>
-                        <div className="menu__content">
+                        <div className="cart__content">
                             <h1>{item.title}</h1>
                             <p>{item.description}</p>
 
 
                         </div>
 
-                        <div className="menu__rating">
+                        <div className="cart__rating">
                             <h4><CiStopwatch /> 24Hr Avb</h4>
                             <h2>$7</h2>
                         </div>
 
-                        <div className="menu__emoji">
+                        <div className="cart__emoji">
 
 
-                            <div className="emoji-img">
+                            <div className="cart-img">
                                 {/* < img src={images.cart} alt="" onClick={() => handleCartClick(item)} /> */}
 
                                 <img src={images.deletepic} onClick={() => handleDelete(item.id)} alt="" />
