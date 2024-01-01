@@ -73,7 +73,7 @@ const AllFood = () => {
                     <h1><FaQuoteLeft /> ALL DISHES<FaQuoteRight /> </h1>
                     <p> <RiSingleQuotesL /> Lorem, ipsum dolor sit ametesse ea. Voluptatum minima quisquam placeat mollitia <br /> repellendus aliquam voluptatem! <RiSingleQuotesR /></p>
 
-                    <div className='menu__add-btn'>
+                    <div className='allfood__add-btn'>
                         <button> <Link to='/addFood'>Add New Food</Link> </button>
                     </div>
                 </div>

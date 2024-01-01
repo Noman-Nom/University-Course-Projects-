@@ -88,9 +88,7 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        background: rgb(248, 225, 223);
-        background: radial-gradient(circle, rgba(248, 225, 223, 1) 0%, rgba(227, 240, 254, 1) 65%, rgba(227, 240, 254, 1) 100%, rgba(227, 240, 254, 1) 100%);
-
+     
 
         align-items: center;
         // padding: 30px 50px;
@@ -256,34 +254,35 @@
 
             }
 
-            .allfood__add-btn {
-
-                display: flex;
-                // border: 1px solid;
-
-
-                button {
-                    padding: 6px 8px;
-                    border: 0;
-                    outline: 0;
-                    width: 190px;
-                    height: 48px;
-                    cursor: pointer;
-                    background-color: var(--yellow-color);
-                    color: #efefef;
-                    border-radius: 12px;
-                    font-size: 16px;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
-
-            }
+            
         }
     }
 }
 
+.allfood__add-btn {
+
+    display: flex;
+    // border: 1px solid;
+
+
+    button {
+        padding: 6px 8px;
+        border: 0;
+        outline: 0;
+        width: 190px;
+        height: 48px;
+        cursor: pointer;
+        background-color: var(--new-color);
+        color: #efefef;
+        border-radius: 12px;
+        font-size: 16px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+}
 
 
