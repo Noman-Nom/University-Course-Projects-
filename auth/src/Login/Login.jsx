@@ -1,9 +1,10 @@
 import React from 'react'
 import './Login.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 import Validation from '../LoginValidation'
+import axios from 'axios'
 
 
 
@@ -11,6 +12,7 @@ import Validation from '../LoginValidation'
 
 const Login = () => {
 
+    const navigate = useNavigate()
     const [values, setValues] = useState({
 
         email: "",
@@ -30,6 +32,20 @@ const Login = () => {
         e.preventDefault()
 
         setError(Validation(values))
+        if(error.email === "" && error.password === ""){
+            axios.post("http://localhost:8801/login", values)
+            .then(res =>{
+                    if(res.data ==="success" ){
+
+                        navigate('/home')
+                    }else{
+                        alert('no record existed')
+                    }
+            })
+            .catch(err =>{
+              console.log(err)
+            })
+          }
     
     }
 
