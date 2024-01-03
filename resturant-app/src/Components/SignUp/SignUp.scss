@@ -1,0 +1,60 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    gap: 12px;
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 8px 24px rgba(37,91, 143, 0.3);
+
+    h2{
+        margin-bottom: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #9c9c9c;
+        outline: 0;
+
+    }
+
+
+    p{
+        font-size: 12px;
+        color: #3c3c3cb8;
+        cursor: pointer;
+    }
+
+    .check_inp{
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+
+        input{
+            padding: 0;
+            width: 12px;
+         cursor: pointer;
+        }
+    }
+
+    button{
+        width: 100%;
+        padding: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        background-color: rgba(255, 0, 0, 0.712);
+        border: none;
+        color: white;
+        margin-top: 10px;
+    border-radius: 5px;
+
+    }
+}

@@ -182,6 +182,62 @@ app.post("/cart",(req,res)=>{
   });
 })
 
+//  auth
+
+app.get("/signup", (req, res) => {
+  const q = "SELECT * FROM signup";
+
+  db.query(q, (err, data) => {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(data);
+    }
+  });
+});
+app.post("/signup", (req, res) => {
+  const q = "INSERT INTO signup (`name`, `email`, `password`) VALUES (?)";
+
+  const values = [
+    // "name from backend",
+    // "email from backend",
+    // "password from backend",
+
+    req.body.name,
+    req.body.email,
+    req.body.password,
+  ];
+
+  db.query(q, [values], (err, data) => {
+    if (err) {
+      res.json(err);
+    } else {
+      // res.json(data)
+      res.json("data has been uploaded");
+    }
+  });
+});
+
+
+app.post("/login", (req, res) => {
+  const q = "SELECT * FROM signup  WHERE `email` = ? AND `password` = ?"
+
+ 
+
+  db.query(q, [req.body.email , req.body.password], (err, data) => {
+    if (err) {
+      res.json(err);
+    } 
+    if(data.length > 0){
+        return res.json("success")
+
+    }
+     else {
+      // res.json(data)
+      res.json("ERROR");
+    }
+  });
+});
 // 
 app.listen(8802, () => {
   console.log("Hello, this is from the backend. I'm Noman.");
