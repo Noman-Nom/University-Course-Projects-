@@ -22,13 +22,13 @@ const App = () => {
      
       <BrowserRouter>
       <Routes>
-        
-     <Route path='/' index element={<Home/>}  />
-     <Route path='/menu' index element={<MenuPage/>}   />
+        <Route path='/'element={<Login/>}  />
+     <Route path='/home' index element={<Home/>}  />
+     <Route path='/menu'  element={<MenuPage/>}   />
      <Route path='/food' element={<AllFoodPage/>} />
      <Route path='/addFood' element={<AddNew/>} />
      <Route path='/cart' element={<CartPage/>} />
-     <Route path='/login' element={<Login/>} />
+     
      <Route path='/signup' element={<SignUp/>} />
 
       </Routes>

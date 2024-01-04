@@ -3,6 +3,7 @@ import './Login.scss'
 import { useNavigate } from 'react-router'
 import Validation from '../../LoginValidation'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -31,7 +32,7 @@ const handleSubmit = (e) => {
       .then(res =>{
               if(res.data ==="success" ){
 
-                  navigate('/')
+                  navigate('/home')
               }else{
                   alert('no record existed')
               }
@@ -45,7 +46,7 @@ const handleSubmit = (e) => {
 
   return (
     <form>
-      <div className="container">
+      <div className="container__login">
         <h2>Login</h2>
         <label >Enter Email *</label>
         <input onChange={handleInput} name='email' type="text" placeholder="Email or username" id="email" />
@@ -62,6 +63,7 @@ const handleSubmit = (e) => {
 
         <button onClick={handleSubmit} type='submit' id="sign_in_btn">Login</button>
         <p> <a href="#" target="_blank">Lost Your password?</a></p>
+       <Link to='/signup'> <button  id="sign_in_btn">Create New Account</button></Link>
     </div>
       
     </form>
