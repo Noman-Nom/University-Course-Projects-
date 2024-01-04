@@ -26,7 +26,7 @@ const SignUp = () => {
         if(error.name === "" && error.email === "" && error.password === ""){
           axios.post("http://localhost:8802/signup", values)
           .then(res =>{
-            navigate('/login')
+            navigate('/')
           })
           .catch(err =>{
             console.log(err)
@@ -36,7 +36,7 @@ const SignUp = () => {
     console.log(values)
   return (
     <form>
-    <div className="container">
+    <div className="container__signup">
 <h2>Register</h2>
 <label >Username</label>
 <input name='name'  onChange={handleChange} type="text" placeholder="username" id="username" />

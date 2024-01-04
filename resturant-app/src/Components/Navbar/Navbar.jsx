@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <div className="nav__left">
           <div className="nav__logo">
-          <Link to='/'>  <img src={images.logo} alt="" /></Link>
+          <Link to='/home'>  <img src={images.logo} alt="" /></Link>
 
           </div>
         </div>
@@ -63,13 +63,13 @@ const Navbar = () => {
 
         <div className="nav__right">
           <div className="nav__right-login">
-            <button className='login'>Login</button>
+           <Link to='/'> <button className='login'>Login</button></Link>
             <span className='single-line'></span>
           </div>
 
           <div className="nav__right-btns">
             <button className='btn-req'>Booking</button>
-            <button className='btn-sign'>Sign up</button>
+          <Link to='/signup'>  <button className='btn-sign'>Sign up</button></Link>
           </div>
 
         </div>
