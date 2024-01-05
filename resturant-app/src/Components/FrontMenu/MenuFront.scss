@@ -183,6 +183,19 @@
     align-items: center;
     width: 100%;
 
+    h2{
+        font-size: 18px;
+// line-height: 80px;
+font-weight: 800;
+word-spacing: 10px;
+letter-spacing: 0.1px;
+// font-family: var(--font-base);
+font-family: 'Nunito', sans-serif;
+text-align: center;
+color: var(--new-color);
+    }
+
+
 
     h4 {
         flex-direction: row;
