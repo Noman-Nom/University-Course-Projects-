@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="upNav">
         <div className="upNav__left">
           <span>+92-304-5456318 <FaPhone /></span>
-          <span>m.noman@s4scorp.com < MdEmail /></span>
+          <span>Muhammadnoman@students.uit.edu < MdEmail /></span>
 
 
         </div>
