@@ -113,7 +113,7 @@ const Menu = () => {
 
                         <div className="menu__rating">
                             <h4><CiStopwatch /> 24Hr Avb</h4>
-                            <span>{item.price}</span>
+                            <h2>${item.price}</h2>
                         </div>
 
                         <div className="menu__emoji">
