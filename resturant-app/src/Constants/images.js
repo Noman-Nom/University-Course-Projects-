@@ -48,6 +48,9 @@ import cart from '../assets/cart.png'
 
 import deletepic from '../assets/delete.png'
 
+import mobile from '../assets/mobile.png'
+import email from '../assets/email.png'
+
 
 
 
@@ -89,6 +92,7 @@ export default {
    food10,
    emoji,
    cart,
-   deletepic
-    
+   deletepic,
+   email,
+   mobile,
 }
